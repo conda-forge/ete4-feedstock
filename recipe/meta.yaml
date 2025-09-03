@@ -1,5 +1,5 @@
 {% set name = "ete4" %}
-{% set version = "4.3.0" %}
+{% set version = "4.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ete4-{{ version }}.tar.gz
-  sha256: c063588a9c77aa16a3de93de4d2016afae0236d4daf325d6290ed668d15a4b86
+  sha256: 0306ab66c2a1685946f94a4912718a5812dfc3059070300fc25d0e2b881bb8d1
 
 build:
   skip: true  # [py<37 or win]
