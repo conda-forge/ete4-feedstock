@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ete4-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/ete4-{{ version }}.tar.gz
   sha256: 0306ab66c2a1685946f94a4912718a5812dfc3059070300fc25d0e2b881bb8d1
 
 build:
@@ -14,7 +14,7 @@ build:
   entry_points:
     - ete4 = ete4.tools.ete:main
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
