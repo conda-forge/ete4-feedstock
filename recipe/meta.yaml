@@ -32,7 +32,7 @@ requirements:
     - python
     - bottle
     - cheroot
-    - brotli
+    - brotli-python
     - numpy
     - scipy
     - requests
